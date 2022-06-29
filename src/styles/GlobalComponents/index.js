@@ -17,10 +17,11 @@ export const Section = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
-
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" };
     width: calc(100vw - 32px);
+    display: flex;
     flex-direction: column;
+    position: absolute;
   }
 `
 
@@ -44,13 +45,12 @@ export const SectionTitle = styled.h2`
   }
 
   @media ${props => props.theme.breakpoints.sm}{
-    font-size: 32px;
     line-height: 40px;
-    font-size: ${(props) => props.main ? '28px' : '32px'};
+    font-size: ${(props) => props.main ? '20px' : '32px'};
     line-height: ${(props) => props.main ? '32px' : '40px'};
     margin-bottom: 8px;
     padding: ${(props) => props.main ? '16px 0 8px' : '0'};
-    max-width: 100%;
+    align-text: center;
   }
 `
 
@@ -70,9 +70,9 @@ export const SectionText = styled.p`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
-    padding-bottom: 16px;
+    padding: 10px 0;
   }
 `
 
@@ -165,6 +165,36 @@ export const SecondaryBtn = styled.button`
     line-height: 16px;
   }
 `
+export const AnimateBtn = styled.div`
+  width: ${({ alt }) => alt ? '150px' : '262px'};
+  height: ${({ alt }) => alt ? '52px' : '64px'};
+  border-radius: 50px;
+  border: 4px solid teal;
+  padding: .5rem;
+  transition: 0.6s ease;
+  background: white;
+ 
+  &:hover {
+    transform : scale(0.95);
+    border-color: indigo;
+  }
+  
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: ${({ alt }) => alt ? '150px' : '184px'};
+    height: ${({ alt }) => alt ? '52px' : '48px'};
+    font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
+    padding: .2rem;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 90%;
+    height: 32px;
+    font-size: 14px;
+    border: 2px solid teal;
+    margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
+    background: white;
+  }
+`
 
 export const ButtonBack = styled.div`
   width: ${({ alt }) => alt ? '150px' : '262px'};
@@ -203,6 +233,7 @@ export const ButtonFront = styled.button`
   border: none;
   border-radius: 50px;
   color: #fff;
+  text-shadow: 0.07rem 0 black, 0.07rem 0 black, 0.07rem 0 black, 0.07rem 0 black ;
   display: flex;
   position: absolute;
   top: 0;

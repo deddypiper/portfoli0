@@ -33,16 +33,14 @@ export const BlogCard = styled.div`
 `;
 export const TitleContent = styled.div`
   text-align: center;
-  z-index: 20;
   width: 100%;
-
+  color: #9cc9e3;
 `;
 
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
   padding: .5rem 0;
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
@@ -53,6 +51,9 @@ export const Hr = styled.hr`
   margin: 20px auto;
   border: 0;
   background: #d0bb57;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 5px auto;
+  }
 `;
 
 export const Intro = styled.div`
@@ -74,39 +75,55 @@ export const CardInfo = styled.p`
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
-}
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 20px;
+    letter-spacing: 0.07rem;
+  }
 `;
 
 
 export const UtilityList = styled.ul`
-  list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-around;
   margin: 2.5rem 0;
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin: 0 0 1rem 0;
+  }
 `;
 
 export const ExternalLinks = styled.a`
-color:#b3b3b3;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #2c4b66;
-border-radius: 15px;
-transition: 0.5s;
-&:hover{
-  background: #170517;
-
-}
+  color:#b3b3b3;
+  font-size: 1.6rem;
+  padding:1rem 1.5rem;
+  background: #2c4b66;
+  border-radius: 15px;
+  transition: 0.5s;
+  &:hover{
+    background: #170517;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.2rem;
+    padding: .8rem 1rem;
+  }
 `;
 
-export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
+export const TagList = styled.div`
+  display: flex;
+  padding: 2rem; 
+  justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 1rem;
+    font-size: 1.3rem;
+    // letter-spacing: 0.07rem;
+  }
 `
-export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
+export const Tag = styled.p`
+  font-size: 1.5rem;
+  font-style: italic;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.2rem;
+  }
 `

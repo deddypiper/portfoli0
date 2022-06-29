@@ -3,10 +3,10 @@ import Hero from '../Hero/Hero'
 import BackgroundAnimation from '../BackgroundAnimation/BackgroundAnimation'
 import { Section } from '../../styles/GlobalComponents';
 
-const HandB = () => {
+const HandB = ({isMobile}) => {
   return (
     <Section grid>
-        <Hero />
+        <Hero isMobile={isMobile}/>
         <BackgroundAnimation />
     </Section>
   )

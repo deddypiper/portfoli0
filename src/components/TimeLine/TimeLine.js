@@ -44,7 +44,7 @@ const Timeline = () => {
 
   return (
     <Section id='about'>
-      <SectionTitle>About me</SectionTitle>
+      <SectionTitle main>About me</SectionTitle>
       <SectionText>My job involves getting you a well-structured website with seamless user interface. I place creativity and detail above every other skill one could get from a web developer. Doubling as a front-end and back-end web programmer, i'm everything you need to set up an optimally efficient website. My creativity is also reflected in previous projects i've taken on, some of which you'd find in this portfolio. <br/> My specialty as a web developer is not limited to building websites for individuals alone. Corporate organizations, NGOs and business ventures also use my services and find it extremely satisfactory. I'm also available for long-term projects, as i like to take on exciting and critical tasks. Check out some of my project samples <Anchor href='#projects'>here!</Anchor></SectionText>
     
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>

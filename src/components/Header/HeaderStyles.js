@@ -16,6 +16,7 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
+    transition: 0.5s ease;
   }
 `;
 export const Div1 = styled.div`
@@ -45,25 +46,51 @@ export const Div3 = styled.div`
     grid-area: 1 / 4 / 2 / 6;
   }
 `;
+export const DivMobile = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  justify-content: space-around;
+  min-height: 30vh;
+  padding: 3rem 0rem 2rem 0rem;
+  align-items: center;
+  transition: 2s ease in;
+  position: absolute;
+  z-index: 1;
+`;
 
 // Navigation Links
-export const Link = styled.a`
+export const Linker = styled.a`
   font-size: 2rem;
 `
 
 export const NavLink = styled.a`
   font-size: 2rem;
+  padding: 1rem;
+  border-radius: 15%;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
+  opacity: 0.75;
   transition: 0.4s ease;
   &:hover {
     color: #fff;
     opacity: 1;
     cursor: pointer;
+    transform: scale(1.2) !important;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
   }
+`;
+
+export const MobLink = styled.button`
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0.75;
+  padding: 1rem;
+  background: transparent;
+  border: none;
 `;
 
 /// DropDown Contact
@@ -126,4 +153,12 @@ border-radius: 50px;
     cursor: pointer;
     
   }
+`
+export const Burger = styled.div`
+transition: 0.3s ease;
+display: flex;
+justify-self: flex-end;
+position: absolute;
+margin: 0 2rem;
+z-index: 2;
 `

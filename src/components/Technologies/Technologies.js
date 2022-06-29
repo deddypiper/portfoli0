@@ -3,11 +3,11 @@ import { DiFirebase, DiReact } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
-const Technologies = () =>  (
+const Technologies = ({isMobile}) =>  (
   <Section id="tech">
-    <SectionDivider/>
+    {!isMobile && <SectionDivider />}
     <br />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle main>Technologies</SectionTitle>
     <SectionText>
       I've worked with a range of technologies in the web development world from back-end to front-end to design.
     </SectionText>
@@ -18,7 +18,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js, Redux and Next.js
+            React.js, Javascript, HTML5, CSS, Next.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,7 +28,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Firebase and Node
+            Node, Express, MongoDB, Firebase
           </ListParagraph>
         </ListContainer>
       </ListItem>
