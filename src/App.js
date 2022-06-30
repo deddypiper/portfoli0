@@ -26,7 +26,7 @@ function App() {
               <Route exact path='/' element={<HandB isMobile={isMobile}/>} />
               <Route exact path='/projects' element={<Projects isMobile={isMobile} />} />
               <Route exact path='/tech' element={<Technologies isMobile={isMobile} />} />
-              <Route exact path='/about' element={<Timeline />} />
+              <Route exact path='/about' element={<Timeline isMobile={isMobile} />} />
               <Route exact path='/footer' element={<Footer />} />        
             </Routes> : 
             <>

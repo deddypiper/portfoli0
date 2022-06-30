@@ -44,6 +44,7 @@ const Timeline = () => {
 
   return (
     <Section id='about'>
+        {!isMobile && <SectionDivider />}
       <SectionTitle main>About me</SectionTitle>
       <SectionText>My job involves getting you a well-structured, search engine optimized <b> website </b> with seamless user interface, custom emails and web hosting services. I place creativity and detail above every other skill one could get from a web developer. Doubling as a front-end and back-end web programmer, I am everything you need to set up an optimally efficient website. My creativity is also reflected in previous projects I have taken on, some of which you will find in this portfolio. <br/> My specialty as a web developer is not limited to building websites for individuals alone. Corporate organizations, NGOs and business ventures also employ my services and find it extremely satisfactory. I am also available for long-term projects, as I like to take on exciting and critical tasks. Check out some of my project samples <Anchor href='#projects'>here!</Anchor></SectionText>
     
