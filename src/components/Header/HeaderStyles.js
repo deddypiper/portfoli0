@@ -50,6 +50,7 @@ export const DivMobile = styled.ul`
   display: flex;
   flex-direction: column;
   justify-self: flex-end;
+  right: 0;
   justify-content: space-around;
   min-height: 30vh;
   padding: 3rem 0rem 2rem 0rem;
@@ -159,6 +160,6 @@ export const Burger = styled.div`
   justify-self: flex-end;
   right: 0;
   position: absolute;
-  margin: 0 2rem;
+  margin-right: 2rem;
   z-index: 2;
 `
