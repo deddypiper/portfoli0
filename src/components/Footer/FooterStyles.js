@@ -16,39 +16,40 @@ export const FooterWrapper = styled.section`
 
 
 export const SocialIconsContainer = styled.div`
-max-width: 1040px;
-display: flex;
-justify-content: space-between;
+	max-width: 1040px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-@media ${props => props.theme.breakpoints.md}{
-  display: flex;
-  justify-content: space-between;
-}
-
-@media ${props => props.theme.breakpoints.sm}{
-  	display: flex;
-	width: 100%;
-  	flex-direction: column;
-}
+	@media ${props => props.theme.breakpoints.md}{
+		width: 100%;
+	}
+`
+export const SocialIcons = styled.a`
+	transition: 0.3s ease;
+	color: white;
+	border-radius: 50px;
+	padding: 2rem;
+	&:hover {
+		background-color: #212d45;
+		transform: scale(1.5);
+		cursor: pointer;
+		
+	}
 `
 
 export const CompanyContainer = styled.div`
   	display: flex;
-	align-items:baseline;
+	align-items: baseline;
 	flex-wrap: wrap;
-	margin-right: auto;
 	
 
 	@media ${props => props.theme.breakpoints.md}{
 		flex-direction: column;
-		align-items: baseline;
 	}
 
 	@media ${props => props.theme.breakpoints.sm}{
-		display: flex;
-		flex-direction: column;
 		margin: 0 0 2px 0;
-		align-items: center;
 	}
 `
 
@@ -56,7 +57,7 @@ export const CompanyContainer = styled.div`
 export const Slogan = styled.p`
 	color: rgba(255, 255, 255, 0.5);
 	min-width: 280px;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.2em;
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 300;
@@ -79,11 +80,13 @@ export const Slogan = styled.p`
 export const SocialContainer = styled.div`
 	display: flex;
   	align-items: center;
+	margin: 2rem;
 
 	@media ${props => props.theme.breakpoints.md}{
 		justify-content: center;
 		padding-top: 10px;
 		flex-wrap: wrap;
+		margin: 0;
 	}
 `
 

@@ -55,7 +55,7 @@ const Projects = ({isMobile}) => {
               <ExternalLinks href={source}>Code</ExternalLinks>
           </UtilityList>
         </BlogCard>
-        ))}
+      ))}
         <AnimateBtn>
           <Button onClick={()=> setMore(!more)}> {more ? "See less" :"See more!"}</Button>
         </AnimateBtn>

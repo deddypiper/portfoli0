@@ -1,15 +1,14 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineMail, AiOutlineTwitter } from 'react-icons/ai';
-import {IoIosCall} from 'react-icons/io'
-import  {SocialIcons}  from '../Header/HeaderStyles';
+import {IoIosCall} from 'react-icons/io';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { SectionTitle } from '../../styles/GlobalComponents';
-import { CompanyContainer, ContactIcons, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { CompanyContainer, SocialIcons, ContactIcons, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <SectionTitle main >Contact Me</SectionTitle>
+      <SectionTitle main >Contact</SectionTitle>
       <LinkList>
         <LinkColumn>
           <LinkTitle><ContactIcons><IoIosCall color='#1732da' size="2.5rem"/></ContactIcons></LinkTitle>

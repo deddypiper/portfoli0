@@ -18,7 +18,7 @@ const Hero = ({isMobile}) => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["a full-stack web developer", "an SEO specialist", "a Content Creator"],
+      strings: ["'m a full-stack web developer,", "'m an SEO specialist,", " offer web development services."],
     });
   }, []);
 
@@ -30,7 +30,7 @@ const Hero = ({isMobile}) => {
         I'm Desmond
       </SectionTitle>
       <SectionText>
-        I'm  <span ref={textRef}></span>
+        I<span ref={textRef}></span>
       </SectionText>
       <AnimateBtn>
         {isMobile 
@@ -38,29 +38,29 @@ const Hero = ({isMobile}) => {
          : <a href='#about'><Button>Learn More</Button></a> 
         }
       </AnimateBtn>
-      {isMobile &&
-      <SocialIconsContainer>
-        <CompanyContainer>
-          <Slogan> ~Building dreams a code at a time</Slogan>
-        </CompanyContainer>
-        <SocialContainer style={{justifyContent: "space-around"}}>
-        <SocialIcons href="https://wa.me/+2347061994070">
-            <RiWhatsappFill size="2rem" />
-        </SocialIcons>
-        <SocialIcons href="https://github.com/deddypiper">
-          <AiFillGithub size="2rem" />
-        </SocialIcons>
-        <SocialIcons href="https://linkedin.com/in/desmond-uyi-6a00aa225">
-          <AiFillLinkedin size="2rem" />
-        </SocialIcons>
-        <SocialIcons href="https://instagram.com/codepipr">
-          <AiFillInstagram size="2rem"/>
-        </SocialIcons>
-        <SocialIcons href="https://twitter.com/deddypiper">
-          <AiOutlineTwitter  size="2rem"/>
-        </SocialIcons>
-        </SocialContainer>
-      </SocialIconsContainer>
+      { isMobile &&
+        <SocialIconsContainer>
+          <CompanyContainer>
+            <Slogan> ~Building dreams a code at a time</Slogan>
+          </CompanyContainer>
+          <SocialContainer>
+          <SocialIcons href="https://wa.me/+2347061994070">
+              <RiWhatsappFill size="2rem" />
+          </SocialIcons>
+          <SocialIcons href="https://github.com/deddypiper">
+            <AiFillGithub size="2rem" />
+          </SocialIcons>
+          <SocialIcons href="https://linkedin.com/in/desmond-uyi-6a00aa225">
+            <AiFillLinkedin size="2rem" />
+          </SocialIcons>
+          <SocialIcons href="https://instagram.com/codepipr">
+            <AiFillInstagram size="2rem"/>
+          </SocialIcons>
+          <SocialIcons href="https://twitter.com/deddypiper">
+            <AiOutlineTwitter  size="2rem"/>
+          </SocialIcons>
+          </SocialContainer>
+        </SocialIconsContainer>
       }
     </LeftSection>
   </Section>
