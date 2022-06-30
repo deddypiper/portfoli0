@@ -146,7 +146,7 @@ export const SocialIcons = styled.a`
   transition: 0.3s ease;
   color: white;
   border-radius: 50px;
-    padding: 8px;
+  padding: 8px;
   &:hover {
       background-color: #212d45;
       transform: scale(1.2);
@@ -157,6 +157,7 @@ export const Burger = styled.div`
   transition: 0.3s ease;
   display: flex;
   justify-self: flex-end;
+  right: 0;
   position: absolute;
   margin: 0 2rem;
   z-index: 2;
