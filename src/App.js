@@ -4,16 +4,17 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { Header, HandB, Projects, Technologies, Timeline, Footer } from "./components";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 770);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   
   const handleResize = () =>{
-    setIsMobile(window.innerWidth > 770);
+    setIsMobile(window.innerWidth < 768);
   }
  
   useEffect(() =>{
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   });
+
   return (
     <Router>
       <div className="App">
