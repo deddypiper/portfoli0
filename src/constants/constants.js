@@ -5,7 +5,7 @@ export const projects = [
       image: '/images/realestate-uae.png',
       tags: ['Express ', 'Firebase ', 'Chakra UI ', 'Node ', 'Next.js',],
     source: 'https://github.com/deddypiper/RealEstate-UAE',
-    visit: 'uae-real-estate-one.vercel.app',
+    visit: 'https://uae-real-estate-one.vercel.app',
     id: 0,
   },
   // {
@@ -23,7 +23,7 @@ export const projects = [
       image: '/images/crypto.png',
       tags: ['REST API ', 'Ant Design ', 'React ', 'Chart.js'],
     source: 'https://github.com/deddypiper/CryptoDom',
-    visit: 'crypto-dom.vercel.app',
+    visit: 'https://crypto-dom.vercel.app',
     id: 2,
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
       image: '/images/voyager.png',
       tags: ['REST API ', 'Google Map API ', 'React ', 'CSS3'],
     source: 'https://github.com/deddypiper/Voyager-Guide',
-    visit: 'voyager-guide.vercel.app',
+    visit: 'https://voyager-guide.vercel.app',
     id: 3,
   },
   {
@@ -41,7 +41,7 @@ export const projects = [
       image: '/images/google.png',
       tags: ['React ', 'Tailwind CSS'],
     source: 'https://github.com/deddypiper/Google-Clone',
-    visit: 'google-clone-two-coral.vercel.app',
+    visit: 'https://google-clone-two-coral.vercel.app',
     id: 4,
   },
   {

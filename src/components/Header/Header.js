@@ -44,7 +44,7 @@ const Header = ({isMobile}) =>  {
             <SocialIcons href="https://github.com/deddypiper">
               <AiFillGithub size="3rem" />
             </SocialIcons>
-            <SocialIcons href="https://aedin.com/in/codepipr">
+            <SocialIcons href="https://linkedin.com/in/codepipr">
               <AiFillLinkedin size="3rem" />
             </SocialIcons>
             <SocialIcons href="https://instagram.com/codepipr">
